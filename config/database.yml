@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+
+development:
+  <<: *default
+  database: test-gumi-1_development
+
+test:
+  <<: *default
+  database: test-gumi-1_test
